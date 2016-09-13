@@ -191,16 +191,11 @@ V = (4*pi/3)*((ro^3)-(ri^3)) %volume of hollow sphere
 
 % 4.)
 
-vec1 = input('Enter a vector: ')
-%Enter a vector: 4:7
-%vec1 =
-%    4     5     6     7
+vec1 = input('Enter a vector using the following format: [x1,x2,xn] \n ');
+disp(vec1)
 
-mat4 = input('Enter a matrix: ')
-%Enter a matrix: [3:2:7;4:6]
-%mat4 =
-%    3     5     7
-%    4     5     6
+mat4 = input('Enter a matrix using the following format: [x1,x2,xn;y1,y2,yn] \n');
+disp(mat4)
 
 % 6.)
 
@@ -214,7 +209,7 @@ fprintf('%2.4f\n',12345.6789) %Prints 12345.6789, shows the 4 decimals, and not 
 
 %This script asks for the fluid flow in m^3/s and print the equivalente in
 %cubic feet per seconds
-flow = input ('Enter the flow in m^3/s: ')
+flow = input ('Enter the flow in m^3/s: ');
 fprintf('A flow rate of %6.3f meters per sec\n is equivalent to %7.3f feet per sec\n', flow, flow/0.028)
 
 % 13.)
@@ -227,4 +222,4 @@ y1 = input ('Please enter the value of y: ')
 z = input ('Please enter the value of z: ')
 ui = sqrt ((x1^2)+(y1^2)+(z^2));
 u2 = [x1 y1 z];
-unit = u2./ui
+UnitVector = u2./ui
