@@ -6,8 +6,8 @@
 clc
 fprintf('Welcome to the Tic Tac Toe game!! \n')
 playAgain = input('Would you like to play an amazing Tic Tac Toe game against the computer?\nPress 1 if you want to play, and press 0 if you would like to exit the game, then press Enter\n');
-while (playAgain == 1)
-    while (playAgain == 1)
+while (playAgain == 1) %while loop that will start if player decides to play again
+    while (playAgain == 1) %while loop containing tic tac toe game
 GameBoard = ['1','2','3';'4','5','6';'7','8','9'];
 num2str(GameBoard);
 fprintf('This is the gameboard\n')
