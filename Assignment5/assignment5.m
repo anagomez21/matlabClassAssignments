@@ -9,11 +9,11 @@ clc
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%----Outputs requested----%%%%%%%%%%%%%%%%%%%%%%%%%%
 [ maleIsoIndMeans,femaleIsoIndMeans,maleGroupIsoMean,femaleGroupIsoMean ]= genderIsoCalc(Gender,Day1,Day2,Day3);
-[ day1toDay2 ] = dayComparator( SubjectID,Day1,Day2 );
-[ day2toDay3 ] = dayComparator( SubjectID,Day2,Day3 );
-[ normDay1mean ] = weightNormMean( Weight,Day1);
-[ normDay2mean ] = weightNormMean( Weight,Day2);
-[ normDay3mean ] = weightNormMean( Weight,Day3);
+day1toDay2 = dayComparator( SubjectID,Day1,Day2 );
+day2toDay3 = dayComparator( SubjectID,Day2,Day3 );
+normDay1mean = weightNormMean( Weight,Day1);
+normDay2mean = weightNormMean( Weight,Day2);
+normDay3mean = weightNormMean( Weight,Day3);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%----Tables with outputs----%%%%%%%%%%%%%%%%%%%%%%%%%
 table1 = table(SubjectID,maleIsoIndMeans,femaleIsoIndMeans, 'VariableNames', {'SubjectID' 'maleIsoIndMeans' 'femaleIsoIndMeans'});
